@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation</title>
+<style>
+    .container {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 0 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div id="page1">
+        <h1>O ramo de apostas esportivas aumentou 360% no Brasil</h1><br><br>
+        <center>
+            <img src="img/img1.png" width='50%'></center><br><br><br>
+        <button class="btn" onclick="goToPage(2)">Avançar</button>
+
+        
+    </div>
+
+    <div id="page2" style="display: none;">
+        <h1>Página 2</h1>
+        <h1>De acordo com um levantamento publicado neste ano pela Datahub, o ramo de apostas esportivas aumentou 360% no Brasil. Entre 2020 e 2022, o número de empresas abertas do setor por ano cresceu de 51 para 239. Somente nos primeiros três meses de 2023, mais de 60 companhias da categoria surgiram.</h1><br><br><br><br>
+        <button class="btn" onclick="goToPage(1)">Retornar</button>
+        <button class="btn" onclick="goToPage(3)">Avançar</button>
+    </div>
+
+    <div id="page3" style="display: none;">
+        <h1>Página 3</h1>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Caça-níquel</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                }
+                #result {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+            </style>
+            </head>
+            <body>
+            <h1>Caça-níquel</h1>
+            <div id="result"></div>
+            <button onclick="spin()">Girar</button>
+            
+            <script>
+            function spin() {
+                var symbols = ['⭐', '🍒', '🔔', '💎', '🍀'];
+                var result = [];
+                for (var i = 0; i < 3; i++) {
+                    var index = Math.floor(Math.random() * symbols.length);
+                    result.push(symbols[index]);
+                }
+                document.getElementById('result').innerText = result.join(' ');
+            }
+            </script>
+            </body><br><br>
+            <h1>João Pedro</h1>
+            <a href="https://fortunetigerjogo.com/demo/"> <img src="img/tigre.jpeg"width='20%'><br><br> </a>
+           
+            <h1>Gustavo</h1>
+            <a href="https://casinos24.com.br/slots/fortune-rabbit"> <img src="img/coelho.jpg"width='20%'><br><br><br><br>
+            </a>
+            
+        <button class="btn" onclick="goToPage(2)">Retornar</button><br><br>
+    </div>
+</div>
+
+<script>
+    function goToPage(pageNumber) {
+        document.getElementById('page1').style.display = 'none';
+        document.getElementById('page2').style.display = 'none';
+        document.getElementById('page3').style.display = 'none';
+        document.getElementById('page' + pageNumber).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

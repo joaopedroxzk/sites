@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caça-níquel</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #result {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+<h1>Caça-níquel</h1>
+<div id="result"></div>
+<button onclick="spin()">Girar</button>
+
+<script>
+function spin() {
+    var symbols = ['⭐', '🍒', '🔔', '💎', '🍀'];
+    var result = [];
+    for (var i = 0; i < 3; i++) {
+        var index = Math.floor(Math.random() * symbols.length);
+        result.push(symbols[index]);
+    }
+    document.getElementById('result').innerText = result.join(' ');
+}
+</script>
+</body>
+</html>
