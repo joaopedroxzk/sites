@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+    
+    document.write("<center>")
+    document.write("<h1 color='BLUE' size='4'> Sua Média<h1>")
+       
+        $nota1 = prompt("Qual a sua primeira nota?")
+        document.write("<br>") 
+        $nota2 = prompt("Qual a sua segunda nota?")
+        document.write("<br>")
+        $nota3 = prompt("Qual a sua terceira nota?")
+
+    $media = (parseInt($nota1) + parseInt($nota2) + parseInt($nota3))/3
+
+    document.write ($media)
+    
+
+
+ </script>
+
+
+<body>
+ <!--fuleco-->   
+</body>
+</html>
