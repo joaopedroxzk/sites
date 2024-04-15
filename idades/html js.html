@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    $nome = prompt ("Qual seu nome?")
+    $idade = prompt ("Qual sua idade?")
+
+    document.write ("<center> <table border='1' width='800' bgcolor='black'>")
+    document.write ("<tr bgcolor='yellow'>")
+    document.write ("<td> <center> NOME </td>")
+    document.write ("<td> <center> IDADE </td>")
+    document.write ("<td> <center> CLASSIFICAÇÃO </td>")
+    document.write ("<td> <center> FOTO <center> </td> </tr>")
+
+    if ($idade < 12) {
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $nome,  "</td>")
+    document.write ("<td> <center>", $idade,  "</td>")
+    document.write ("<td> <center> CRIANÇA </td>")
+    document.write ("<td> <center> <img src='img/crianca.jfif' width='200' alt=''> <center> </td> </tr>")
+    }
+
+    else if ($idade < 21) {
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $nome,  "</td>")    
+    document.write ("<td> <center>", $idade,  "</td>")
+    document.write ("<td> <center> JOVEM </td>")
+    document.write ("<td> <center> <img src='img/jovem.jpg' width='200' alt=''> <center> </td> </tr>")
+    }
+
+    else if ($idade < 60) {
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $nome,  "</td>")
+    document.write ("<td> <center>", $idade,  "</td>")
+    document.write ("<td> <center> ADULTO </td>")
+    document.write ("<td> <center> <img src='img/adulto.jfif' width='200' alt=''> <center> </td> </tr>")
+    }
+
+    else {
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $nome,  "</td>")
+    document.write ("<td> <center>", $idade,  "</td>")
+    document.write ("<td> <center> IDOSO </td>")
+    document.write ("<td> <center> <img src='img/idoso.jpg' width='200' alt=''> <center> </td> </tr>")
+    }
+
+</script>
+
+<body>
+ 
+    
+</body>
+</html>
