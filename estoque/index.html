@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    $estoque = prompt ("Quantas peças possui no estoque ?")
+
+
+    document.write ("<center> <table border='1' width='800' bgcolor='black'>")
+    document.write ("<tr bgcolor='yellow'>")
+    document.write ("<td> <center> PEÇAS EM ESTOQUE  </td>")
+    document.write ("<td> <center> ESTADO DO ESTOQUE </td>")
+    document.write ("<td> <center> . <center> </td> </tr>")
+
+    if ($estoque < 50) {
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $estoque,  "</td>")
+    document.write ("<td> <center> BAIXO </td>")
+    document.write ("<td> <center> <img src='img/vazio.jpg' width='300' alt=''> <center> </td> </tr>")
+    }
+
+    else if ($estoque < 100) {
+    document.write ("<tr bgcolor='white'>")   
+    document.write ("<td> <center>", $estoque,  "</td>")
+    document.write ("<td> <center> NORMAL </td>")
+    document.write ("<td> <center> <img src='img/normal.jpg' width='300' alt=''> <center> </td> </tr>")
+    }
+
+    else {
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $estoque,  "</td>")
+    document.write ("<td> <center> ALTO </td>")
+    document.write ("<td> <center> <img src='img/cheio.webp' width='300' alt=''> <center> </td> </tr>")
+    }
+</script>
+<body>
+    
+</body>
+</html>
