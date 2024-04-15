@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    $salario= prompt ("Informe qual seu salário:")
+
+
+    document.write ("<center> <table border='1' width='800' bgcolor='black'>")
+    document.write ("<tr bgcolor='blue'>")
+    document.write ("<td> <center> SALÁRIO</td>")
+    document.write ("<td> <center> IMPOSTO (%) </td>")
+    document.write ("<td> <center> VALOR DESCONTADO <center> </td>")
+    document.write ("<td> <center> SALÁRIO COM DESCONTO <center> </td> </tr>")
+
+    if ($salario < 1100.01) {
+    $porcentagem_aliquota = 0.075
+    $vlr_impst = $salario * $porcentagem_aliquota
+    $slr_final = parseInt($salario) - parseInt($vlr_impst)
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $salario, "</td>")
+    document.write ("<td> <center> 7,5% </td>")
+    document.write ("<td> <center>", $vlr_impst, "<center> </td>")
+    document.write ("<td> <center>", $slr_final, "<center> </td> </tr>")
+    }
+
+    else if ($salario < 2203.49) {
+    $porcentagem_aliquota = 0.09
+    $vlr_impst = $salario * $porcentagem_aliquota
+    $slr_final = parseInt($salario) - parseInt($vlr_impst)
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $salario, "</td>")
+    document.write ("<td> <center> 9% </td>")
+    document.write ("<td> <center>", $vlr_impst, "<center> </td>")
+    document.write ("<td> <center>", $slr_final, "<center> </td> </tr>")
+    }
+
+    else if ($salario < 3305.23) {
+    $porcentagem_aliquota = 0.12
+    $vlr_impst = $salario * $porcentagem_aliquota
+    $slr_final = parseInt($salario) - parseInt($vlr_impst)
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $salario,  "</td>")
+    document.write ("<td> <center> 12% </td>")
+    document.write ("<td> <center>", $vlr_impst, "<center> </td>")
+    document.write ("<td> <center>", $slr_final, "<center> </td> </tr>")
+    }
+
+    else  {
+    $porcentagem_aliquota = 0.14
+    $vlr_impst = $salario * $porcentagem_aliquota
+    $slr_final = parseInt($salario) - parseInt($vlr_impst)
+    document.write ("<tr bgcolor='white'>")
+    document.write ("<td> <center>", $salario,  "</td>")
+    document.write ("<td> <center> 14% </td>")
+    document.write ("<td> <center>", $vlr_impst, "<center> </td>")
+    document.write ("<td> <center>", $slr_final, "<center> </td> </tr>")
+    }
+   
+</script>
+<body>
+    
+</body>
+</html>
